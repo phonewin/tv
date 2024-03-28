@@ -22,11 +22,18 @@
   
       2.1 电脑安装chrome，下载对应版本的chromedriver
       2.2 下载itv.py cctv.py weishi.py qita.py
-      2.3 pip install selenium requests futures eventlet
+      2.3 pip install selenium requests futures eventlet opencv-python
       2.4 依次运行itv.py cctv.py weishi.py qita.py
       2.5 运行完成后在当前目录下生成电视直播文件itvlist.txt。
-      
+
+3.在openwrt或群辉的docker运行：
+
+        1.安装：docker pull liuxipo/itvall:latest
+        2.运行：docker run -v /www/itvall:/app itvall
+        3.访问：http://本地ip/itvall/itvlist.txt
   
+2024.03.06更新，应大家要求，增加了视频分辨率的检测，只保留1080的以上的频道，py文件末尾增加了1080的标识，因检测太耗时，github运行文件未更新。
+          
 2024.02.17更新，增加时间标签；因频道太多，cctv、卫视及其它频道均修改为单独的文件运行；修改为每四小时运行，更新更及时。
 
 2024.02.11更新，修复部分频道错误。
