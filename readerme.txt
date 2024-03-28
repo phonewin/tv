@@ -1,5 +1,11 @@
-创建虚拟环境：
+windowns创建虚拟环境：
 python -m venv venv
 .\venv\Scripts\activate
+pip install selenium requests futures eventlet opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+
+mac创建虚拟环境：
+python -m venv venv
+source ./venv/Scripts/activate
 pip install selenium requests futures eventlet opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
