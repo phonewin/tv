@@ -31,6 +31,8 @@
         1.安装：docker pull liuxipo/itvall:latest
         2.运行：docker run -v /www/itvall:/app itvall
         3.访问：http://本地ip/itvall/itvlist.txt
+
+注意：selenium 是4.11.2以上的版本，不需要设置driver.exe的路径，selenium 可以自己处理浏览器的驱动程序，因此代码直接改为brower = webdriver.Chrome()即可。
   
 2024.03.06更新，应大家要求，增加了视频分辨率的检测，只保留1080的以上的频道，py文件末尾增加了1080的标识，因检测太耗时，github运行文件未更新。
           
